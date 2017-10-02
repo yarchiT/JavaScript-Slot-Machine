@@ -1,0 +1,43 @@
+#wrapper {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+#wrapper::after {
+    padding-top: 56.25%;
+    /* 16:9 ratio */
+    display: block;
+    content: '';
+}
+#playground {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-size: 100%;
+    background-image: url("img/BG.png");
+}
+
+#playBtn{
+    position: absolute;
+    width: 10%;
+    top: 40.5%;
+    right: 4%;
+}
+
+#betLine{
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+
+@media screen and (min-width: 800px) {
+    #wrapper{
+        width: 60%;
+        margin-left: 20%;
+    }
+}
