@@ -1,9 +1,8 @@
-1. when click on the button play draw images with canvas on the slot
-2.
 
 
- Before
-57 px = 7.35 %
 
-Strip
-184 px = 24 %
+- render strip to continue after first spin
+- check the responsive
+- create result array
+- check the WILD rule in slot games
+
