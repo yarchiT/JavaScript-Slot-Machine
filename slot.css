@@ -22,23 +22,38 @@
 
 #playBtn{
     position: absolute;
+    opacity: 0.9;
     width: 10%;
     top: 40.5%;
     right: 4%;
 }
 
-#betLine{
-    position: absolute;
-    top: 30%;
-    left: 0;
-    width: 100%;
-    display: none;
+#playBtn:hover{
+    opacity: 1;
+}
+
+#playBtn:active{
+    width: 9%;
+    top: 41.5%;
+    right: 4.5%;
 }
 
 
-@media screen and (min-width: 800px) {
+#moneyWin{
+    color: #e9ce24;
+    font: 9px Helvetica, Sans-Serif;
+    background: rgb(0, 0, 0);
+    background: rgba(10, 53, 62, 0.9);
+    position: absolute;
+    bottom: 20%;
+    right: 4%;
+}
+
+
+
+@media only screen and (max-width: 650px) {
     #wrapper{
-        width: 60%;
-        margin-left: 20%;
+        width: 100%;
+        margin-left: 0;
     }
 }

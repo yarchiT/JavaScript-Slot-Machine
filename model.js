@@ -7,7 +7,7 @@ function loadImg() {
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
             symbolsImage = JSON.parse(this.responseText);
-            console.log(symbolsImage.reel_strip_image+symbolsImage.bet_line);
+            console.log(symbolsImage.reel_strip_image+symbolsImage.bet_line_image);
             setImageSrc();
         }
     };
