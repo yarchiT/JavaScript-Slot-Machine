@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slot machine</title>
-    <script type="text/javascript" src="view.js"></script>
+    <script type="text/javascript" src="reel.js"></script>
+    <script type="text/javascript" src="slot.js"></script>
     <script type="text/javascript" src="model.js"></script>
-    <script type="text/javascript" src="controller.js"></script>
     <link rel="stylesheet" type="text/css" href="slot.css" />
 </head>
 <body>
@@ -15,9 +15,8 @@
 
     <div id="playground">
         <canvas id="slots"></canvas>
-        <img onclick="drawImages()" id="playBtn" src="img/BTN_Spin.png"/>
-        <img id="betLine" src="img/Bet_Line.png"/>
-
+        <img onclick="move_reel()" id="playBtn" src="img/BTN_Spin.png"/>
+        <span id="moneyWin">Money: $0<br /> Win: 0</span>
     </div>
 
 </div>

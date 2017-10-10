@@ -1,24 +1,16 @@
 'use strict';
 
-let symbols, symbolImages =[];
+let symbolsImage;
 
 function loadImg() {
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
-            symbols = JSON.parse(this.responseText);
-            makeSymbolImgArr();
+            symbolsImage = JSON.parse(this.responseText);
+            console.log(symbolsImage.reel_strip_image+symbolsImage.bet_line_image);
+            setImageSrc();
         }
     };
     xhttp.open("GET", "JSON_symbol_images", true);
     xhttp.send();
-}
-
-function makeSymbolImgArr(){
-   for (let imageSrc in symbols.filenames){
-       let image = new Image();
-       image.src = symbols.filenames[imageSrc];
-       symbolImages.push(image);
-   }
-    console.log(symbolImages);
 }

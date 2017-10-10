@@ -1,4 +1,4 @@
 {
-  "filenames": ["img/SYM1.png", "img/SYM2.png", "img/SYM3.png", "img/SYM4.png",
-    "img/SYM5.png", "img/SYM6.png"]
+  "reel_strip_image": "img/reel_strip.png",
+  "bet_line_image": "img/Bet_Line.png"
 }
